@@ -3,8 +3,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  /* background-color: var(--color-bg); */
-  background-color: black;
+  background-color: var(--color-bg);
   z-index: 1000;
 }
 .logo a {
