@@ -1,0 +1,22 @@
+.footer{
+  padding: 3rem 0;
+  background-color: var(--color-bg-secondary);
+  color: var(--text-primary);
+  font-family: var(--font-geist-mono);
+  font-size: 1.6rem;
+  text-align: center;
+}
+.socialMedia{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: auto;
+}
+.socialMedia a{
+  filter: invert();
+}
+.footerContainer{
+  display: flex;
+  flex-direction: column-reverse;
+}
+

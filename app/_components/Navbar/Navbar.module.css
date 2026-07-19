@@ -1,0 +1,127 @@
+.nav {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* background-color: var(--color-bg); */
+  background-color: black;
+  z-index: 1000;
+}
+.logo a {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0.3rem;
+  cursor: pointer;
+  color: var(--text-secondary);
+  
+  
+}
+
+
+.logo {
+  position: relative;
+
+  padding: 0.5rem;
+  aspect-ratio: 1 / 1.154; 
+  background: var(--text-tertiary); 
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+.logo:hover {
+  transform: scale(1.1);
+  box-shadow: 4px 4px 8px 0px var(--text-tertiary);
+}
+.logo::before {
+  content: '';
+  position: absolute;
+  inset: 2.5px;
+
+  background: var(--color-bg);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  z-index: 1;
+}
+.logo > * {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.hamburger {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  cursor: pointer;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.hamburger span {
+  width: 2.5rem;
+  height: 0.3rem;
+  background: #ffff;
+  transition: 0.3s;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  height: 100%;
+  width: 100%;
+}
+
+.hamburger.active span:nth-child(1) {
+  animation: hamburgerTop 0.3s forwards;
+}
+
+.hamburger.active span:nth-child(2) {
+  animation: hamburgerMiddle 0.3s forwards;
+}
+
+.hamburger.active span:nth-child(3) {
+  animation: hamburgerBottom 0.3s forwards;
+}
+
+@keyframes hamburgerTop {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(8px) rotate(45deg);
+  }
+}
+
+@keyframes hamburgerMiddle {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes hamburgerBottom {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}

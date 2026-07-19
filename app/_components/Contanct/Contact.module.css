@@ -1,0 +1,55 @@
+.contact{
+  padding-bottom: 10rem;
+}
+.contactWrapper{
+  text-align: center;
+  padding: 10rem 2rem;
+  background-color:var(--color-bg-tertiary);
+  border-radius: 5rem;
+}
+
+.contactWrapper h1{
+  color: var(--text-secondary);
+  font-size: 4rem;
+  line-height: 1.1;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.contactWrapper p{
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  line-height: 1.6;
+  padding: 2rem 0;
+}
+.contactWrapper a{
+  color: var(--color-bg);
+  font-family: var(--font-geist-mono);
+
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  background-color: var(--text-primary);
+  padding:1rem 3rem;
+
+  
+  border-radius: .5rem;
+}
+.contactWrapper span{
+  color: var(--text-primary);
+  font-size: 1.6rem;
+}
+.emailPhone{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media screen and (min-width: 768px){
+  .emailPhone{
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .contactWrapper a{
+    min-width: 25rem;
+  }
+}
