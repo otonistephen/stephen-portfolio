@@ -110,7 +110,8 @@ export const expertiseList = [
 
 export const navLink = [
   { id: 1, name: 'home', url: '/', targetId: 'home' },
-  { id: 2, name: 'projects', url: '/#projects', targetId: 'projects' },
-  { id: 3, name: 'skills', url: '/#skills', targetId: 'skills' },
-  { id: 4, name: 'contact', url: '/#contact', targetId: 'contact' },
+  { id: 2, name: 'about', url: '/#about', targetId: 'about' },
+  { id: 3, name: 'projects', url: '/#projects', targetId: 'projects' },
+  { id: 4, name: 'skills', url: '/#skills', targetId: 'skills' },
+  { id: 5, name: 'contact', url: '/#contact', targetId: 'contact' },
 ];

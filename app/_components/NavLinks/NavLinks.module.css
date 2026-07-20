@@ -4,6 +4,7 @@
   position: absolute;
   top: 100%;
   left: 0;
+  
   background-color: var(--color-bg);
   /* background-color: black; */
   width: 100%;

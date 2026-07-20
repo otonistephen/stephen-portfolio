@@ -2,11 +2,12 @@
   background-color: var(--color-bg-secondary);
   padding: 10rem 0;
 }
-.header h1 {
+.subTitle {
   font-size: 1.6rem;
   color: var(--text-tertiary);
   font-family: var(--font-geist-mono);
   font-weight: 600;
+  text-transform: uppercase;
 }
 .header h2 {
   font-size: 4rem;
@@ -22,7 +23,6 @@
 .imageWrapper {
   position: relative;
   transition: transform 0.5s ease-in-out;
-
   cursor: pointer;
 }
 .imageWrapper:hover {
@@ -32,9 +32,7 @@
 .imageWrapper::after {
   content: '';
   position: absolute;
-  inset: 0;
-
-  
+  inset: 0;  
   background: linear-gradient(
     135deg,
     rgba(47, 217, 244, 0.9),

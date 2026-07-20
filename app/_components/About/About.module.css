@@ -1,0 +1,125 @@
+.aboutSection {
+  padding: 8rem 0;
+}
+
+.subTitle {
+  font-size: 1.6rem;
+  color: var(--text-tertiary);
+  font-family: var(--font-geist-mono);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.sectionTitle {
+
+  font-size: 4rem;
+  color: var(--text-secondary);
+  padding: 1rem 0 3rem 0;
+}
+
+/* Subtle accent underline for your section title */
+
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  
+  gap: 4rem;
+  align-items: center;
+}
+.textWrapper h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.3;
+  color: var(--text-secondary);
+  font-family: var(--font-geist-sans);
+}
+.textWrapper p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+.imageWrapper {
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+  max-width: 32rem;
+  margin: 0 auto;
+  order: 2;
+}
+.imageWrapper:hover {
+  transform: translateY(-2px);
+  filter: drop-shadow(0 0 15px rgba(47, 217, 244, 0.4));
+}
+.imageWrapper::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+
+  
+  background: linear-gradient(
+    135deg,
+    rgba(47, 217, 244, 0.9),
+    rgba(42, 8, 231, 0.4)
+  );
+
+  z-index: 3;
+  border-radius: 0.5rem;
+  transition: opacity 0.5s ease-in-out;
+  mix-blend-mode: screen;
+
+  opacity: 1;
+}
+.imageWrapper:hover::after {
+
+  opacity: 0;
+}
+.profileImg {
+  border-radius: 0.5rem;
+  /* 3. Switch back to cover, but use object-position to anchor the crop to the top */
+  object-fit: cover;
+  object-position: top center; 
+  
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background-color: #eaeaea; 
+  width: 100%;
+  height: auto;
+}
+/* .imageWrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  
+} */
+/* Switches cleanly to side-by-side view on desktop viewports */
+@media (min-width: 768px) {
+  .contentGrid {
+    grid-template-columns: 1fr 1.5fr;
+  
+  }
+  .imageWrapper{
+  max-width: 100%;
+  margin: 0 auto;
+  order: unset;
+}
+}
+
+/*  */
+
+/* .profileImg {
+  border-radius: .5rem;
+  object-fit: contain;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background-color: #eaeaea; 
+  
+} */
+
+
+
+
+
+
+
+

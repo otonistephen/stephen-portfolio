@@ -11,9 +11,9 @@ export default function Skills() {
           <div className={styles.skillsStack}>
             <div className={styles.skillsHeader}>
               {' '}
-              <h1>tech stack</h1>
+              <p className={styles.subTitle}>tech stack</p>
               <h2>expertise & Tooling</h2>
-              <p>
+              <p className={styles.skillsDescription}>
                 I like building things that look sharp and actually work. Here
                 is the stack I use to take ideas from a blank screen to a fully
                 functional, secure web application.

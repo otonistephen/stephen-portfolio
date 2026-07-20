@@ -1,7 +1,7 @@
 .skills {
   padding: 10rem 0;
 }
-.skillsHeader h1 {
+.subTitle {
   font-size: 1.6rem;
   text-transform: uppercase;
   color: var(--text-tertiary);
@@ -17,7 +17,7 @@
   text-transform: capitalize;
   font-family: var(--font-geist-sans);
 }
-.skillsHeader p {
+.skillsDescription {
   color: var(--text-primary);
   font-size: 1.6rem;
   padding: 2.3rem 0 3.2rem 0;

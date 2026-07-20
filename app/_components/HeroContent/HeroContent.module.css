@@ -1,7 +1,7 @@
 .heroContent {
   padding-top: 6rem;
 }
-.heroContent h1 {
+.introText {
   font-size: 1.6rem;
   font-weight: 400;
   color: var(--text-tertiary);
@@ -10,14 +10,14 @@
   animation: slideRight 3s ease forwards;
   animation-delay: 2s;
 }
-.heroContent h2 {
+.heroContent h1 {
   font-size: 4.5rem;
   font-family: var(--font-geist-mono);
   color: var(--text-primary);
   line-height: 1.1;
   
 }
-.heroContent h3 {
+.heroContent h2 {
   font-size: 4rem;
   color: var(--text-secondary);
   font-family: var(--font-geist-mono);
@@ -30,7 +30,7 @@
   animation: zoomIn 3s ease forwards;
 
 }
-.heroContent p {
+.contentP {
   font-size: 1.6rem;
   color: var(--text-secondary);
   font-family: var(--font-geist-sans);

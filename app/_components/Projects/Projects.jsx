@@ -11,7 +11,7 @@ export default function Projects() {
       <div className='container'>
         <div className={styles.projectsWrapper}>
           <div className={styles.header}>
-            <h1>Featured Projects</h1>
+            <p className={styles.subTitle}>Featured Projects</p>
             <h2>Architectural case studies</h2>
           </div>{' '}
           <div className={styles.projectsContainer}>

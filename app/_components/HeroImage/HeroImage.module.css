@@ -1,6 +1,8 @@
+.heroImage{
+  padding-right: 1rem;
+}
 
-
-.heroImage {
+.heroImageContent {
   display: flex;
   align-items: center;
   justify-content: center;
