@@ -9,19 +9,19 @@ export default function About() {
         <h2 className={styles.sectionTitle}>About Me</h2>
 
         <div className={styles.contentGrid}>
-          {/* Left Column: Profile Picture */}
+        
           <div className={styles.imageWrapper}>
             <Image
-              src='/images/profile_image.jpg' // Add your image to the public/ folder
+              src='/images/profile_image.jpg' 
               alt='Stephen Otoni - Frontend Developer Portfolio Photo'
               width={600}
               height={600}
               className={styles.profileImg}
-              priority={false} // Only use priority if this section sits immediately above-the-fold
+              priority={false} 
             />
           </div>
 
-          {/* Right Column: Bio Content */}
+        
           <div className={styles.textWrapper}>
             <h3>
               Designing Functional Interfaces, Engineering Scalable Systems

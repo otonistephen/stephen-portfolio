@@ -1,8 +1,9 @@
 .heroContent {
   padding-top: 6rem;
+  /* background-color: red; */
 }
 .introText {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
   color: var(--text-tertiary);
   font-family: var(--font-geist-mono);
@@ -11,14 +12,14 @@
   animation-delay: 2s;
 }
 .heroContent h1 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-family: var(--font-geist-mono);
   color: var(--text-primary);
   line-height: 1.1;
   
 }
 .heroContent h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--text-secondary);
   font-family: var(--font-geist-mono);
   line-height: 1.2;
@@ -62,10 +63,13 @@
 }
 
 @media (min-width: 768px) {
-  .heroContent h2 {
+  .introText{
+    font-size: 1.6rem;
+  }
+  .heroContent h1 {
     font-size: clamp(4rem, 6vw, 6.4rem);
   }
-  .heroContent h3 {
+  .heroContent h2 {
     font-size: clamp(3rem, 4.5vw, 5.5rem);
   }
 }

@@ -4,7 +4,11 @@
   align-items: center;
   gap: 5rem;
   padding-bottom: 10rem;
+ 
+  
+
 }
+
 
 @media (min-width: 768px) {
   .heroContainer {

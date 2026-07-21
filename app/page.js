@@ -12,10 +12,10 @@ export default function Home() {
     '@type': 'Person',
     name: 'Stephen Otoni',
     jobTitle: 'Frontend Developer',
-    url: 'https://otonistephen.vercel.app', // You will update this later with your Vercel/Custom URL
+    url: 'https://www.otonistephen.vercel.app', // You will update this later with your Vercel/Custom URL
     sameAs: [
       'https://github.com/otonistephen', // Update with your actual profile links
-      'https://instagram.com/otonistephen'
+      'https://instagram.com/otonistephen',
     ],
     knowsAbout: [
       'Next.js',
@@ -23,7 +23,7 @@ export default function Home() {
       'JavaScript',
       'Frontend Development',
       'Web Development',
-      'Supabase'
+      'Supabase',
     ],
   };
 
@@ -31,15 +31,15 @@ export default function Home() {
     <main>
       {/* Inject the JSON-LD script securely into the head element of this page */}
       <script
-        type="application/ld+json"
+        type='application/ld+json'
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
       <section id='home'>
         <Hero />
       </section>
-        <section id='about'>
-        <About/>
+      <section id='about'>
+        <About />
       </section>
 
       <section id='projects'>

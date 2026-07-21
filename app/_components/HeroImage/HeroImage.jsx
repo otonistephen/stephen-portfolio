@@ -3,6 +3,7 @@ import styles from './HeroImage.module.css';
 export default function HeroImage() {
   return (
     <div className={styles.heroImage}>
+    
       <div className={styles.heroImageContent}>
         <div className={styles.window}>
           <div className={styles.titleBar}>
@@ -31,5 +32,6 @@ export default function HeroImage() {
         </div>
       </div>
     </div>
+  
   );
 }
